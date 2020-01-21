@@ -45,12 +45,14 @@ public class SceneManager : MonoBehaviour
             case CurrentScene.PRESENT:
                 mainCamera.transform.position = new Vector3(0f, 0f, 50f);
                 mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
+                mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f; 
                 currScene = CurrentScene.FUTURE;
                 break;
 
             case CurrentScene.FUTURE:
                 mainCamera.transform.position = new Vector3(0f, 0f, 0f);
-                mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3    .up);
+                mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
+                mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f;
                 currScene = CurrentScene.PRESENT;
                 break;
         }

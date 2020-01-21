@@ -5,9 +5,9 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public float timeToRotate = 20f;
+    public float angleToRotate = 0f; 
     float currentRotationTime = 0f;
     float currentAngle = 0f;
-    float angleToRotate = 0f; 
     bool toRotate = false;
 
     public Animator compass;
@@ -20,7 +20,7 @@ public class CameraMovement : MonoBehaviour
     {
         currentAngle = transform.rotation.eulerAngles.y;
 
-        if(angleToRotate < 0)
+        if (angleToRotate < 0)
         {
             angleToRotate = 270;
         }
@@ -42,6 +42,7 @@ public class CameraMovement : MonoBehaviour
         }
         
         compass.SetInteger("current_angle", (int)angleToRotate);
+
         if (toRotate)
         {
             InterpolateRotation();
