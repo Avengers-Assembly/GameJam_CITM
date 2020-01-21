@@ -72,6 +72,6 @@ public class CameraMovement : MonoBehaviour
 
     public void StartZoomingIn()
     {
-        transform.GetComponent<Camera>().orthographicSize - 10; 
+        //transform.GetComponent<Camera>().orthographicSize - 10; 
     }
 }
