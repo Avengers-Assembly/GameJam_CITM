@@ -5,30 +5,35 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     float rateTime = 0f;
+    float currentAngle = 0f;
+    float angleToRotate = 0f; 
     bool toRotate = false;
 
     // Update is called once per frame
     void Update()
     {
+        rateTime += Time.deltaTime;
 
-        rateTime += Time.deltaTime; 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        currentAngle = transform.rotation.eulerAngles.y;
+
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && !toRotate)
         {
-            toRotate = true; 
-            Debug.Log("Should rotate Left");
-            rateTime = 0;
+            toRotate = true;
+            angleToRotate = currentAngle - 90f;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) && !toRotate)
         {
-            Debug.Log("Should rotate Right");
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.AngleAxis(-90, Vector3.up), Time.deltaTime);
-            transform.rotation = Quaternion.AngleAxis(90, Vector3.up);
+            toRotate = true;
+            angleToRotate = currentAngle + 90f;
         }
 
         if(toRotate)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.AngleAxis(-90, Vector3.up), Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.AngleAxis(angleToRotate, Vector3.up), Time.deltaTime);
+            Debug.Log(currentAngle);
+            if (currentAngle == angleToRotate)
+                toRotate = false;
         }
     }
 }
