@@ -17,7 +17,6 @@ public class CameraMovement : MonoBehaviour
             toRotate = true; 
             Debug.Log("Should rotate Left");
             rateTime = 0;
-
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
