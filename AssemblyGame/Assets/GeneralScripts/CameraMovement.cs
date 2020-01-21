@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    public float timeToRotate = 1f;
     float rateTime = 0f;
     float currentAngle = 0f;
     float angleToRotate = 0f; 
@@ -16,7 +17,7 @@ public class CameraMovement : MonoBehaviour
 
         currentAngle = transform.rotation.eulerAngles.y;
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && !toRotate)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && !toRotate)
         {
             toRotate = true;
             angleToRotate = currentAngle - 90f;
@@ -32,6 +33,7 @@ public class CameraMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.AngleAxis(angleToRotate, Vector3.up), Time.deltaTime);
             Debug.Log(currentAngle);
+            Debug.Log(angleToRotate);
             if (currentAngle == angleToRotate)
                 toRotate = false;
         }
