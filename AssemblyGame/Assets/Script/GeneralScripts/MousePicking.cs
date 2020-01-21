@@ -12,7 +12,7 @@ public class MousePicking : MonoBehaviour
     {
         if (selected_object != null)
         {
-            var selection_render = selected_object.GetComponent<Image>();
+            var selection_render = selected_object.GetComponent<SpriteRenderer>();
             if (selection_render != null)
             {
                 selection_render.color = Color.white;
@@ -28,7 +28,7 @@ public class MousePicking : MonoBehaviour
 
             if (selection != null)
             {
-                Image selection_r = selection.GetComponent<Image>();
+                SpriteRenderer selection_r = selection.GetComponent<SpriteRenderer>();
                
                 if (selection_r != null)
                 {
@@ -39,9 +39,10 @@ public class MousePicking : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                var dialogue = selection.GetComponent<DialogTrigger>();
+                var dialogue = selection.GetComponent<AbstractAction>();
+                
                 if(dialogue != null)
-                    dialogue.TriggerDialogue();   
+                    dialogue.OnAction();   
             }
         }
 
