@@ -32,12 +32,17 @@ public class SceneManager : MonoBehaviour
     IEnumerator ChangePosition()
     {
         transition.SetTrigger("Start_Fade");
+        StartZoomingIn();
 
         yield return new WaitForSeconds(1f);
 
         SelectSceneToChange();
     }
 
+    private void StartZoomingIn()
+    {
+        mainCamera.GetComponent<CameraMovement>().StartZoomingIn();
+    }
     private void SelectSceneToChange()
     {
         switch (currScene)

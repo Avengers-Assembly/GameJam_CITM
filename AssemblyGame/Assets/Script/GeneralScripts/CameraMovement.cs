@@ -5,7 +5,8 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public float timeToRotate = 20f;
-    public float angleToRotate = 0f; 
+    public float angleToRotate = 0f;
+    public Transform doorPos; 
     float currentRotationTime = 0f;
     float currentAngle = 0f;
     bool toRotate = false;
@@ -67,5 +68,10 @@ public class CameraMovement : MonoBehaviour
             currentRotationTime = 0f;
             toRotate = false;
         }
+    }
+
+    public void StartZoomingIn()
+    {
+        transform.GetComponent<Camera>().orthographicSize - 10; 
     }
 }
