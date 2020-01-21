@@ -10,6 +10,8 @@ public class CameraMovement : MonoBehaviour
     float angleToRotate = 0f; 
     bool toRotate = false;
 
+    public Animator compass;
+
     void Start()
     {
     }
@@ -38,12 +40,14 @@ public class CameraMovement : MonoBehaviour
             toRotate = true;
             angleToRotate = currentAngle + 90f;
         }
-
+        
+        compass.SetInteger("current_angle", (int)angleToRotate);
         if (toRotate)
         {
             InterpolateRotation();
         }
 
+       
     }
 
     private void InterpolateRotation()
