@@ -2,13 +2,12 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-AssemblyGame/[Tt]emp
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
+AssemblyGame/[Ll]ibrary/
+AssemblyGame/[Tt]emp/
+AssemblyGame/[Oo]bj/
+AssemblyGame/[Bb]uild/
+AssemblyGame/[Bb]uilds/
+AssemblyGame/[Ll]ogs/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
