@@ -41,7 +41,7 @@ public class SceneManager : MonoBehaviour
 
     private void StartZoomingIn()
     {
-        mainCamera.GetComponent<CameraMovement>().StartZoomingIn();
+        StartCoroutine(mainCamera.GetComponent<CameraMovement>().StartZoomingIn());
     }
     private void SelectSceneToChange()
     {
@@ -50,7 +50,9 @@ public class SceneManager : MonoBehaviour
             case CurrentScene.PRESENT:
                 mainCamera.transform.position = new Vector3(0f, 0f, 50f);
                 mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
-                mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f; 
+                mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f;
+                StartCoroutine(mainCamera.GetComponent<CameraMovement>().StartZoomingOut());
+                //mainCamera.GetComponent<Camera>().orthographicSize = 5.35f;
                 currScene = CurrentScene.FUTURE;
                 break;
 
@@ -58,6 +60,8 @@ public class SceneManager : MonoBehaviour
                 mainCamera.transform.position = new Vector3(0f, 0f, 0f);
                 mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
                 mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f;
+                StartCoroutine(mainCamera.GetComponent<CameraMovement>().StartZoomingOut());
+                //mainCamera.GetComponent<Camera>().orthographicSize = 5.35f;
                 currScene = CurrentScene.PRESENT;
                 break;
         }

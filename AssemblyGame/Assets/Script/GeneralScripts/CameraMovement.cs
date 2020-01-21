@@ -6,8 +6,10 @@ public class CameraMovement : MonoBehaviour
 {
     public float timeToRotate = 20f;
     public float angleToRotate = 0f;
-    public Transform doorPos; 
+    public Transform doorPos;
+
     float currentRotationTime = 0f;
+    float currentTranslationTime = 0f;
     float currentAngle = 0f;
     bool toRotate = false;
 
@@ -70,8 +72,29 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
-    public void StartZoomingIn()
+    public IEnumerator StartZoomingIn()
     {
-        //transform.GetComponent<Camera>().orthographicSize - 10; 
+        while(transform.GetComponent<Camera>().orthographicSize > 1.2)
+        {
+            //Debug.Log("Hello I should be fucking interpolating but im not");
+            currentTranslationTime += Time.deltaTime;
+            transform.GetComponent<Camera>().orthographicSize = Mathf.Lerp(transform.GetComponent<Camera>().orthographicSize , 1, currentTranslationTime);
+            transform.position = Vector3.Lerp(transform.position, doorPos.position, currentTranslationTime);
+            yield return new WaitForEndOfFrame();
+        }
+        Debug.Log("I should stop now");
+        currentTranslationTime = 0f;
+    }
+
+    public IEnumerator StartZoomingOut()
+    {
+        while (transform.GetComponent<Camera>().orthographicSize < 5.35f)
+        {
+            Debug.Log("Hello I should be fucking interpolating but im not");
+            currentTranslationTime += Time.deltaTime * 0.5f;
+            transform.GetComponent<Camera>().orthographicSize = Mathf.Lerp(transform.GetComponent<Camera>().orthographicSize, 5.35f, currentTranslationTime);
+            yield return new WaitForEndOfFrame();
+        }
+        currentTranslationTime = 0f;
     }
 }
