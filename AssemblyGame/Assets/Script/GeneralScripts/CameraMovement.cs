@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public float timeToRotate = 10f;
-    float rateTime = 1f;
+    public float timeToRotate = 20f;
     float currentRotationTime = 0f;
     float currentAngle = 0f;
     float angleToRotate = 0f; 
