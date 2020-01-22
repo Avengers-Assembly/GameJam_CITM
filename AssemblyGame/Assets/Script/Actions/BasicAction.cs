@@ -7,7 +7,7 @@ public class BasicAction : AbstractAction
     public Camera camera;
     public GameObject dialogueManager;
     Vector3 on_position;
-    public override void OnAction()
+    public override void DoMyOwnAction()
     {
         GetComponent<DialogTrigger>().TriggerDialogue();
         dialogueManager.GetComponent<DialogueManager>().SetObjectPicked(gameObject);

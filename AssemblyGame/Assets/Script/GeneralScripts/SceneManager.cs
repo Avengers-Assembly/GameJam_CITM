@@ -24,27 +24,48 @@ public class SceneManager : MonoBehaviour
         }
     }
 
-    public void ChangeBetweenScenes()
+    public void ChangeBetweenScenes(bool changeScene = true)
     {
-        StartCoroutine(ChangePosition());
+        StartCoroutine(ChangePosition(changeScene));
     }
 
-    IEnumerator ChangePosition()
+    IEnumerator ChangePosition(bool changeScene = true)
     {
         transition.SetTrigger("Start_Fade");
         StartZoomingIn();
 
         yield return new WaitForSeconds(1f);
 
-        SelectSceneToChange();
+        SelectSceneToChange(changeScene);
     }
 
     private void StartZoomingIn()
     {
         StartCoroutine(mainCamera.GetComponent<CameraMovement>().StartZoomingIn());
     }
-    private void SelectSceneToChange()
+    private void SelectSceneToChange(bool changeScene)
     {
+        if(!changeScene)
+        {
+            // We keep in the same scene
+            switch (currScene)
+            {
+                case CurrentScene.PRESENT:
+                    mainCamera.transform.position = new Vector3(0f, 0f, 0);
+                    break;
+
+                case CurrentScene.FUTURE:
+                    mainCamera.transform.position = new Vector3(0f, 0f, 50f);
+                    break;
+            }
+
+            mainCamera.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
+            StartCoroutine(mainCamera.GetComponent<CameraMovement>().StartZoomingOut());
+            mainCamera.GetComponent<CameraMovement>().angleToRotate = 180f;
+            return;
+
+        }
+
         switch (currScene)
         {
             case CurrentScene.PRESENT:
