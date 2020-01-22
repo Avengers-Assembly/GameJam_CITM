@@ -1431,10 +1431,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Table
+    sentences:
+    - The table where I achieved my greatness.
 --- !u!212 &384263215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5254,7 +5253,7 @@ GameObject:
   - component: {fileID: 1409529939}
   - component: {fileID: 1409529938}
   m_Layer: 0
-  m_Name: portrait
+  m_Name: Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5929,7 +5928,7 @@ GameObject:
   - component: {fileID: 1451493496}
   - component: {fileID: 1451493495}
   m_Layer: 0
-  m_Name: poster
+  m_Name: Poster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5943,7 +5942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451493493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.29, y: 0, z: 40.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2120159753}
@@ -5962,7 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: poster
+  - name: Poster
     sentences:
     - "They are just the same\u2026 i wonder if it\u2019s an opression symptom.\r\n"
 --- !u!65 &1451493496
@@ -5976,8 +5975,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.6014984, y: 3.7377777, z: 0.25826263}
+  m_Center: {x: -0.19217694, y: 1.7061672, z: -0.37086868}
 --- !u!212 &1451493497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6300,8 +6299,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6120307, y: 3.1804264, z: 0.27356625}
-  m_Center: {x: 0.30601537, y: -1.0902132, z: 0.21861029}
+  m_Size: {x: 1.946866, y: 1.8258522, z: 0.27356625}
+  m_Center: {x: 1.9568772, y: -1.7675003, z: 0.21861029}
 --- !u!114 &1480327265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7953,8 +7952,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5319452, y: 4.3383927, z: 0.11705685}
-  m_Center: {x: -0.05301237, y: -1.0239527, z: -0.44147158}
+  m_Size: {x: 5.5776386, y: 0.7257452, z: 0.11705685}
+  m_Center: {x: 1.4698343, y: -5.116324, z: -0.44147158}
 --- !u!114 &1928732007
 MonoBehaviour:
   m_ObjectHideFlags: 0
