@@ -82,7 +82,7 @@ public class CameraMovement : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, doorPos.position, currentTranslationTime);
             yield return new WaitForEndOfFrame();
         }
-        Debug.Log("I should stop now");
+        //Debug.Log("I should stop now");
         currentTranslationTime = 0f;
     }
 
