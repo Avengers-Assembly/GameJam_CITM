@@ -356,11 +356,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 'air conditioning '
-    sentences:
-    - 'Cold, heat.. they only keep diggin in my pain.
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!114 &77215700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,133 +422,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &77711946
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 77711947}
-  - component: {fileID: 77711950}
-  - component: {fileID: 77711949}
-  - component: {fileID: 77711948}
-  - component: {fileID: 77711951}
-  m_Layer: 0
-  m_Name: Mirror
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &77711947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77711946}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 9.5, y: -2.6, z: -5.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 126984328}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &77711948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77711946}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.690001, y: 5.79, z: 0.20000005}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &77711949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77711946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Present Mirror
-    sentences:
-    - "Each day it takes more value to face \nthe mirror im sick of its reflex\r\n\n"
---- !u!212 &77711950
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77711946}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2db2ea082d5b6fc4e930602b716c5d7a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.69, y: 5.79}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &77711951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77711946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 1915264357}
-  dialogueManager: {fileID: 1363949242}
 --- !u!1 &81125231
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +681,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 77711947}
   - {fileID: 1468429251}
   m_Father: {fileID: 1840736912}
   m_RootOrder: 1
@@ -888,11 +759,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Yellow Jacket
-    sentences:
-    - 'This jacket saved me so many times... i wish i didn''t need it anymore.
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &218426499
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1296,9 +1166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Phone
-    sentences:
-    - New Message From 110111010
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!114 &332863731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1549,9 +1420,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Table
-    sentences:
-    - This is kinda trahs nowadays
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &384263215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1699,9 +1571,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Lamp
-    sentences:
-    - A gift of my loved ones, wonder wha they would think about me
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!65 &486269218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1789,9 +1662,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 'bare wires '
-    sentences:
-    - "Finally this is how it should be, though it\u2019s uglier\r\n\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!114 &502145702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,11 +1789,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Shelving Furniture
-    sentences:
-    - This furniture has been taken from me
-    - "A book called How Pig Things\r\n\n\nAnti-humans propaganda, if i have this
-      i just for my protection,  can\u2019t risk being seen as pro-human.\n\r\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!65 &505864207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2323,11 +2196,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Aloe Vera
-    sentences:
-    - 'Aloe Vera my dear plant, if only i had hair nowadays...
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &600603545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2452,12 +2324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Present Mirror
-    sentences:
-    - 'Sometimes i wonder how gifted I am.
-
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &719800444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2836,10 +2706,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Furniture Locked
-    sentences:
-    - "Mmm It\u2019s locked, can\u2019t remember what\u2019s inside. Where is the
-      key?\r\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!65 &826403111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3203,10 +3073,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Furniture Locked
-    sentences:
-    - "Mmm It\u2019s locked, can\u2019t remember what\u2019s inside. Where is the
-      key?\r\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!65 &942011459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4018,6 +3888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectable_color: {r: 0.9920671, g: 1, b: 0, a: 1}
+  animator: {fileID: 0}
 --- !u!4 &1088463046
 Transform:
   m_ObjectHideFlags: 0
@@ -4377,9 +4248,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Table
-    sentences:
-    - Beautiful table, im still amazed how is holding time.
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!1 &1271331493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,11 +4360,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Calendar
-    sentences:
-    - 'Oh... i thought we were on holidays..
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1314049611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4861,10 +4732,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Phone
-    sentences:
-    - Call him back, he's waiting for you. If I rembember, you left a note around
-      here.
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!1 &1363949242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,9 +4928,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Portrait
-    sentences:
-    - Am I gorgeous, right?
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1409529941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5553,13 +5425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Shelving Furniture
-    sentences:
-    - This furniture contains some wishes...
-    - "A book called Transhumanism\nFree yourself to data, it\u2019s not so hard
-      to understand. They just need time.\r\n\r\n"
-    - "A book called Machine Feelings \r\nI just keep this book as a reminder, feelings
-      doesn\u2019t belong to a race.\r\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!1 &1441346284
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,7 +5657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 126984328}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1468429252
 BoxCollider:
@@ -5816,11 +5685,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Window
-    sentences:
-    - 'If only i had the value... this is my window to the world, this is my world.
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!114 &1468429254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5959,12 +5827,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Aloe Vera
-    sentences:
-    - 'Aloe Vera my dear plant, are you the only living being around here?
-
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1480327267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6208,9 +6074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Lamp
-    sentences:
-    - A gift of my loved ones, wonder wha they would think who i am.
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!65 &1633543397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6743,11 +6610,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Calendar
-    sentences:
-    - 'I need some vacation...
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1832810064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7053,9 +6919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Portrait
-    sentences:
-    - How young... To remember where i come from.
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1862016449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7296,10 +7163,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Yellow Jacket
-    sentences:
-    - "This jacket saved me so many times... it\u2019s nice to be surrounded with
-      precious things\r\n\n"
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!212 &1928732009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7778,13 +7645,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Window
-    sentences:
-    - 'Sometimes i think transhumans only care for themselves, everything is a complete
-      mess.
-
-
-'
+  - name: 
+    sentences: []
+  - name: 
+    sentences: []
 --- !u!114 &2130755319
 MonoBehaviour:
   m_ObjectHideFlags: 0
