@@ -8,6 +8,7 @@ public class PhoneAction : AbstractAction
     public GameObject dialogueManager;
     public GameObject[] bottons;
     public int[] correctNumber;
+    public bool correct_pasword = false;
     int N_insert_number = 0;
     Vector3 on_position;
 
@@ -21,6 +22,7 @@ public class PhoneAction : AbstractAction
     }
     public override void DoMyOwnAction()
     {
+        on_position = transform.position;
         N_insert_number = 0;
         camera.GetComponent<blur>().BlurIn();
         on_position = transform.position;
@@ -32,23 +34,32 @@ public class PhoneAction : AbstractAction
     } 
     public override void EndAction()
     {
-        while(inserted_number.Count < 9)
+        if (inserted_number.Count > 8)
         {
-           
-        }
-        camera.GetComponent<blur>().BlurOut();
-        StartCoroutine(ReturnOriginalPos(on_position));
-        StopAllCoroutines();
-        for (int i = 0; i < 9; ++i)
-        {
-            bottons[i].SetActive(false);
+            camera.GetComponent<blur>().BlurOut();
+            StartCoroutine(ReturnOriginalPos(on_position));
+            StopAllCoroutines();
+            for (int i = 0; i < 9; ++i)
+            {
+                bottons[i].SetActive(false);
+            }
+            for(int i = inserted_number.Count - 1; i >= 0; --i)
+            {
+                if(correctNumber[i] != inserted_number.Dequeue())
+                {
+                    continue;
+                }
+                correct_pasword = true;
+            }
+
         }
     }
 
     public void SetNumber(int num)
     {
         inserted_number.Enqueue(num);
-        Debug.Log(num);
+        Debug.Log(inserted_number);
         ++N_insert_number;
+        EndAction();
     }
 }

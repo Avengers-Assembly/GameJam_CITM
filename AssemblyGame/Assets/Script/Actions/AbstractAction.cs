@@ -29,6 +29,7 @@ public abstract class AbstractAction : MonoBehaviour
         Vector3 final_pos = cam.transform.position + cam.transform.forward * 5 + cam.transform.up;
         while (final_pos.magnitude > 1.2 || final_pos.magnitude < -1.2)
         {
+            currentTranslationTime = 0f;
             //Debug.Log("Hello I should be fucking interpolating but im not");
             currentTranslationTime += Time.deltaTime;
             transform.position = Vector3.Lerp(transform.position, final_pos, currentTranslationTime);
