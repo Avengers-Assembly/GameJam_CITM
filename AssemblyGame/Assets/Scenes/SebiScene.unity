@@ -2481,7 +2481,7 @@ MonoBehaviour:
   - {fileID: 75257219}
   - {fileID: 2056461205}
   - {fileID: 2058751675}
-  - {fileID: 454455370}
+  - {fileID: 1922503355}
   - {fileID: 454455370}
 --- !u!4 &557363571
 Transform:
@@ -4777,8 +4777,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1106021435}
   - component: {fileID: 1106021438}
-  - component: {fileID: 1106021437}
-  - component: {fileID: 1106021436}
   m_Layer: 0
   m_Name: DeadBody
   m_TagString: Untagged
@@ -4800,32 +4798,6 @@ Transform:
   m_Father: {fileID: 1507564381}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1106021436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106021434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c0615a02d07224aadfc647d3ad2342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phone: {fileID: 0}
---- !u!65 &1106021437
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106021434}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.86, y: 8.98, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1106021438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9449,7 +9421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a87f8469c19a0449c1cb13466a9eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor: {fileID: 0}
+  actor: {fileID: 1359608469}
 --- !u!1 &1926839569
 GameObject:
   m_ObjectHideFlags: 0

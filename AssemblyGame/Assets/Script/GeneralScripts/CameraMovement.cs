@@ -32,6 +32,20 @@ public class CameraMovement : MonoBehaviour
             angleToRotate = 0;
         }
 
+        if(Input.mousePosition.x <= 50 && !toRotate)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+            toRotate = true;
+            angleToRotate = currentAngle - 90f;
+        }
+
+        if (Input.mousePosition.x >= 1870 && !toRotate)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+            toRotate = true;
+            angleToRotate = currentAngle + 90f;
+        }
+
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !toRotate)
         {
             gameObject.GetComponent<AudioSource>().Play();
