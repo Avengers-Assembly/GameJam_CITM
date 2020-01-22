@@ -9,5 +9,6 @@ public class E_Door1 : EventAbstract
     {
         Debug.Log("Doing Event Action");
         GameObject.Find("SceneManager").GetComponent<SceneManager>().ChangeBetweenScenes(false);
+        phone.GetComponent<AudioSource>().Play();
     }
 }
