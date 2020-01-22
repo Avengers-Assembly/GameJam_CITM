@@ -61,8 +61,8 @@ public class CameraMovement : MonoBehaviour
             currentRotationTime += Time.deltaTime * (1 / timeToRotate);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.AngleAxis(angleToRotate, Vector3.up), currentRotationTime);
 
-            Debug.Log("Current angle: " + currentAngle);
-            Debug.Log("Angle to rotate: " + angleToRotate);
+            //Debug.Log("Current angle: " + currentAngle);
+            //Debug.Log("Angle to rotate: " + angleToRotate);
         }
         else
         {
@@ -90,7 +90,7 @@ public class CameraMovement : MonoBehaviour
     {
         while (transform.GetComponent<Camera>().orthographicSize < 5.35f)
         {
-            Debug.Log("Hello I should be fucking interpolating but im not");
+            //Debug.Log("Hello I should be fucking interpolating but im not");
             currentTranslationTime += Time.deltaTime * 0.5f;
             transform.GetComponent<Camera>().orthographicSize = Mathf.Lerp(transform.GetComponent<Camera>().orthographicSize, 5.35f, currentTranslationTime);
             yield return new WaitForEndOfFrame();
