@@ -8,11 +8,17 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
     Queue<string> sentences;
+
+    GameObject interact;
     void Start()
     {
         sentences = new Queue<string>();
     }
 
+    public void SetObjectPicked(GameObject obj)
+    {
+        interact = obj;
+    }
     public void StartDialogue(Dialogue dialogue)
     {
         sentences.Clear();
@@ -53,5 +59,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("is_Open", false);
+        interact.GetComponent<AbstractAction>().EndAction();
+        interact = null;
     }
 }
