@@ -1529,7 +1529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actor: {fileID: 1436903028}
-  door: {fileID: 1780989270}
 --- !u!1 &486269214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: lamp
+  - name: Lamp
     sentences:
     - Useful for daylight eyes... like mines
 --- !u!65 &486269218
@@ -2007,6 +2006,9 @@ MonoBehaviour:
   - {fileID: 1839668154}
   - {fileID: 833741212}
   - {fileID: 454455370}
+  - {fileID: 1106346441}
+  - {fileID: 454455370}
+  - {fileID: 454455370}
 --- !u!4 &557363571
 Transform:
   m_ObjectHideFlags: 0
@@ -2021,6 +2023,7 @@ Transform:
   - {fileID: 1839668153}
   - {fileID: 833741211}
   - {fileID: 454455369}
+  - {fileID: 1106346440}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3351,8 +3354,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.104846954, y: 6.340527, z: 6.1419554}
-  m_Center: {x: -0.44757652, y: -0.5300014, z: 0.22172642}
+  m_Size: {x: 0.104846954, y: 6.74931, z: 6.3012033}
+  m_Center: {x: -0.13, y: -0.32560992, z: -0.09905505}
 --- !u!114 &942011460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4166,6 +4169,51 @@ Transform:
   m_Father: {fileID: 115093250}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1106346439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106346440}
+  - component: {fileID: 1106346441}
+  m_Layer: 0
+  m_Name: E_Phone2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106346440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106346439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 557363571}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106346441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106346439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3897c3b2977f5944495128fa688538a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: {fileID: 1359608469}
+  door: {fileID: 1780989270}
 --- !u!1 &1175342268
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,7 +4593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 1
+  - name: Table
     sentences:
     - My old and reliable desk
 --- !u!1 &1271331493
@@ -5021,7 +5069,7 @@ MonoBehaviour:
       here"
   - name: Phone
     sentences:
-    - At least, for god sake hurry up and come here, we depend on it.
+    - At last, for god sake hurry up and come here, we depend on it.
   - name: Phone
     sentences:
     - "Hey, i have an existential question, if you would like to be something else
@@ -5760,6 +5808,9 @@ MonoBehaviour:
       to understand. They just need time.\r"
     - "A book called: Machine Feelings.  I just keep this book as a reminder, feelings
       doesn\u2019t belong to a race.\r\n"
+  - name: Library
+    sentences:
+    - 'There''s a note with numbers inside one of the books. '
 --- !u!1 &1441346284
 GameObject:
   m_ObjectHideFlags: 0
