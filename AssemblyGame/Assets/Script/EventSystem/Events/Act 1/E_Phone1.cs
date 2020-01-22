@@ -8,5 +8,6 @@ public class E_Phone1 : EventAbstract
     public override void DoAction()
     {
         Debug.Log("Doing Event Phone 1 Actiion");
+        actor.GetComponent<AudioSource>().Stop();
     }
 }

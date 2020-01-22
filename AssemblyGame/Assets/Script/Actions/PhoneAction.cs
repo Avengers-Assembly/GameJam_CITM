@@ -15,10 +15,11 @@ public class PhoneAction : AbstractAction
    
     void Start()
     {
+        eventSystem = GameObject.Find("CustomEventManager").GetComponent<EventSystem>();
         correctNumber = new int[9];
         inserted_number = new Queue<int>();
     }
-    public override void OnAction()
+    public override void DoMyOwnAction()
     {
         N_insert_number = 0;
         camera.GetComponent<blur>().BlurIn();
