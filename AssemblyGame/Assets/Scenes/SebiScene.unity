@@ -3703,7 +3703,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a73783fdd47b454683008cffcbfb59e, type: 2}
+  - {fileID: 2100000, guid: 5e70a930a3423734ca01e93d67d29d7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4613,7 +4613,6 @@ GameObject:
   - component: {fileID: 1359608473}
   - component: {fileID: 1359608472}
   - component: {fileID: 1359608475}
-  - component: {fileID: 1359608471}
   - component: {fileID: 1359608476}
   m_Layer: 0
   m_Name: Phone
@@ -4636,23 +4635,6 @@ Transform:
   m_Father: {fileID: 302894838}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1359608471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359608469}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8446d7cc49d3a54c87738f0dad29009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 1915264357}
-  dialogueManager: {fileID: 1363949242}
-  bottons: []
-  correctNumber: 
-  correct_pasword: 0
 --- !u!65 &1359608472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7654,7 +7636,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a73783fdd47b454683008cffcbfb59e, type: 2}
+  - {fileID: 2100000, guid: 80e54242a56152b479ee4b3de5af111b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
