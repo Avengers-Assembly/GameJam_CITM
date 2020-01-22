@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class E_Recorder1 : EventAbstract
+public class E_EmptyShelf : EventAbstract
 {
-    public GameObject door;
+    public GameObject door; 
     public override void DoAction()
     {
-        // Trigger Dialog 
         actor.GetComponent<DialogTrigger>().TriggerDialogue(1);
-        door.GetComponent<DoorAction>().changesScene = false;
+        
+        // Open door
+        door.GetComponent<DoorAction>().changesScene = true;
     }
 }
+
