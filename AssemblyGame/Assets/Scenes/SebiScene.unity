@@ -5017,14 +5017,15 @@ MonoBehaviour:
 '
   - name: Phone
     sentences:
-    - I'm a phone
+    - "-Call him back, he\u2019s waiting for you, if I remember you left a note around
+      here"
   - name: Phone
     sentences:
     - At least, for god sake hurry up and come here, we depend on it.
   - name: Phone
     sentences:
-    - "-Call him back, he\u2019s waiting for you, if i remember you left a note around
-      here"
+    - "Hey, i have an existential question, if you would like to be something else
+      but this world couldn\u2019t provide it what would you do?\r"
   - name: Phone
     sentences:
     - "Hey, i have an existential question, if you would like to be something else
@@ -5038,7 +5039,7 @@ MonoBehaviour:
     sentences:
     - 'What a mess... will you do the same?
 
-      
+
 
 '
   - name: node2

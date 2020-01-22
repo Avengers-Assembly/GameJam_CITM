@@ -59,7 +59,10 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("is_Open", false);
-        interact.GetComponent<AbstractAction>().EndAction();
-        interact = null;
+        if(interact != null)
+        {
+            interact.GetComponent<AbstractAction>().EndAction();
+            interact = null;
+        }
     }
 }
