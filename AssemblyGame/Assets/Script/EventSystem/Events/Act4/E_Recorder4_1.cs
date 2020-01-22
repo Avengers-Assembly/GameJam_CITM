@@ -12,5 +12,6 @@ public class E_Recorder4_1 : EventAbstract
 
         // Posar la corda a true
         rope.SetActive(true);
+        Debug.Log(rope.active.ToString());
     }
 }

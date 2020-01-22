@@ -34,12 +34,14 @@ public class CameraMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !toRotate)
         {
+            gameObject.GetComponent<AudioSource>().Play();
             toRotate = true;
             angleToRotate = currentAngle - 90f;
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow) && !toRotate)
         {
+            gameObject.GetComponent<AudioSource>().Play();
             toRotate = true;
             angleToRotate = currentAngle + 90f;
         }
