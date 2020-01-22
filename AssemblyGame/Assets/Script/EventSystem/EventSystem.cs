@@ -6,6 +6,7 @@ public class EventSystem : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public bool killed = false;
     public List<EventAbstract> eventQueue;
 
     public bool CheckNextEvent(GameObject asking)
@@ -21,6 +22,14 @@ public class EventSystem : MonoBehaviour
     {
         Debug.Log("Exectuing Event Action");
         eventQueue.First().DoAction();
+        eventQueue.RemoveAt(0);
+    }
+
+    public void PopNextEvent()
+    {
+        if (eventQueue.Count == 0)
+            return; 
+
         eventQueue.RemoveAt(0);
     }
 }
