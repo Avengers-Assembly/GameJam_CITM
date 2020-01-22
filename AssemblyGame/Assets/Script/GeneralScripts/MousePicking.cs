@@ -7,6 +7,7 @@ public class MousePicking : MonoBehaviour
 {
     private Transform selected_object;
     public Color selectable_color;
+    public Animator animator;
     // Update is called once per frame
     void Update()
     {
@@ -22,9 +23,11 @@ public class MousePicking : MonoBehaviour
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        bool is_open = animator.GetBool("is_Open");
+
+        if (Physics.Raycast(ray, out hit) && !is_open)
         {
-            Transform selection = hit.transform;
+               Transform selection = hit.transform;
 
             if (selection != null)
             {
@@ -37,7 +40,7 @@ public class MousePicking : MonoBehaviour
                 selected_object = selection;
             }
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) )
             {
                 var dialogue = selection.GetComponent<AbstractAction>();
                 
