@@ -7,6 +7,7 @@ public class RopeAction : AbstractAction
     public override void DoMyOwnAction()
     {
         GameObject.Find("CustomEventManager").GetComponent<EventSystem>().killed = true;
+        GameObject.Find("CustomEventManager").GetComponent<EventSystem>().PopNextEvent();
 
         GameObject.Find("SceneManager").GetComponent<SceneManager>().ChangeBetweenScenes(true);
     }
