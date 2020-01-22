@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MirrorAction : AbstractAction
+public class BasicAction : AbstractAction
 {
     public Camera camera;
     public GameObject dialogueManager;
