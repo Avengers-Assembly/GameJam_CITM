@@ -5,10 +5,26 @@ using UnityEngine;
 public abstract class AbstractAction : MonoBehaviour
 {
     float currentTranslationTime = 0f;
-    public virtual void OnAction()
+    protected EventSystem eventSystem;
+    
+    void Start()
+    {
+        eventSystem = GameObject.Find("CustomEventManager").GetComponent<EventSystem>();
+    }
+
+    public virtual void DoMyOwnAction()
     {
     }
-    public virtual IEnumerator SpriteCenter(Camera cam)
+
+    public void OnAction()
+    {
+        if (eventSystem.CheckNextEvent(this.gameObject))
+            eventSystem.ExecuteNextEvent();
+
+        else DoMyOwnAction();
+    }
+
+    public IEnumerator SpriteCenter(Camera cam)
     {
         Vector3 final_pos = cam.transform.position + cam.transform.forward * 5 + cam.transform.up;
         while (final_pos.magnitude > 1.2 || final_pos.magnitude < -1.2)
@@ -21,7 +37,7 @@ public abstract class AbstractAction : MonoBehaviour
         currentTranslationTime = 0f;
     }
 
-    public virtual IEnumerator ReturnOriginalPos(Vector3 pos)
+    public IEnumerator ReturnOriginalPos(Vector3 pos)
     {
         currentTranslationTime = 0f;
 
@@ -35,5 +51,10 @@ public abstract class AbstractAction : MonoBehaviour
     }
     public virtual void EndAction()
     {
+    }
+
+    public bool CheckEvent()
+    {
+        return eventSystem.CheckNextEvent(this.gameObject);
     }
 }
