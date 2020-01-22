@@ -10,6 +10,9 @@ public class EventSystem : MonoBehaviour
 
     public bool CheckNextEvent(GameObject asking)
     {
+        if (eventQueue.Count == 0)
+            return false; 
+
         Debug.Log("Checking if " + asking.name + "is the next event actor but is" + eventQueue.First().actor.name);
         return eventQueue.First().actor == asking;
     }

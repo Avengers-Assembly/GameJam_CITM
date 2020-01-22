@@ -12,7 +12,7 @@ public class E_Phone1 : EventAbstract
         actor.GetComponent<AudioSource>().Stop();
 
         // Triggejar el dialeg
-        actor.GetComponent<DialogTrigger>().TriggerDialogue();
+        actor.GetComponent<DialogTrigger>().TriggerDialogue(1);
 
         // Crear la nota
          

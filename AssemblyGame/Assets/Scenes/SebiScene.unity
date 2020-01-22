@@ -284,6 +284,135 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: []
+--- !u!1 &27157848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27157849}
+  - component: {fileID: 27157853}
+  - component: {fileID: 27157852}
+  - component: {fileID: 27157851}
+  - component: {fileID: 27157850}
+  m_Layer: 0
+  m_Name: poster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27157849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27157848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.61, y: -0.27, z: -9.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1507564381}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27157850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27157848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8acbd0cfa25e8e54a8d928c8f0cfb87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
+--- !u!114 &27157851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27157848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - name: Library
+    sentences:
+    - 'Savages... how they dare to impose their lifestyle
+
+'
+--- !u!65 &27157852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27157848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.59422, y: 4.6836414, z: 0.19208622}
+  m_Center: {x: 0.29738188, y: 2.6310234, z: 0.13815928}
+--- !u!212 &27157853
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27157848}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &74833858
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +501,7 @@ GameObject:
   - component: {fileID: 77215699}
   - component: {fileID: 77215698}
   - component: {fileID: 77215700}
+  - component: {fileID: 77215702}
   m_Layer: 0
   m_Name: AirConditioner
   m_TagString: Untagged
@@ -419,10 +549,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Air Conditioner
+    sentences:
+    - "Cold, heat.. they only keep diggin in my pain.\r"
 --- !u!114 &77215700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +616,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &77215702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77215696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!1 &77711946
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,10 +690,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Mirror
+    sentences:
+    - 'Each day it takes more value to face the mirror im sick of its reflex
+
+
+'
 --- !u!212 &77711950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1081,7 +1226,6 @@ Transform:
   - {fileID: 1359608470}
   - {fileID: 942011457}
   - {fileID: 77215697}
-  - {fileID: 1639334204}
   m_Father: {fileID: 1840736912}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1213,234 +1357,6 @@ Transform:
   m_Father: {fileID: 1788755806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &332863728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 332863729}
-  - component: {fileID: 332863734}
-  - component: {fileID: 332863733}
-  - component: {fileID: 332863732}
-  - component: {fileID: 332863731}
-  - component: {fileID: 332863730}
-  m_Layer: 0
-  m_Name: Phone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &332863729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.55, y: -0.33, z: 50.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1253411349}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &332863730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
---- !u!114 &332863731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8446d7cc49d3a54c87738f0dad29009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
-  bottons: []
-  correctNumber: 
-  correct_pasword: 0
---- !u!65 &332863732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7986436, y: 0.97188497, z: 0.1224888}
-  m_Center: {x: -1.0666167e-16, y: -0.020576358, z: 0.03875564}
---- !u!82 &332863733
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e40d030ab0db63b4ca410d73d2332bf6, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!212 &332863734
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332863728}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 330d69314f51967428f0853e1feb9a79, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.96, y: 1.19}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &384263210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,8 +1403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!65 &384263213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1710,7 +1626,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: lamp
+    sentences:
+    - Useful for daylight eyes... like mines
 --- !u!65 &486269218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1784,8 +1703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acbd0cfa25e8e54a8d928c8f0cfb87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!114 &505864206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,10 +1718,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Library
+    sentences:
+    - This shelf contains the fears of this time. I'm not proud of it, but what can
+      I do?
+    - "A book called:  How pig things\r. Anti-humans propaganda, if i have this i
+      just for my protection,  can\u2019t risk being seen as pro-human.\r\n"
 --- !u!65 &505864207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2134,6 +2055,148 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &576451191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576451192}
+  - component: {fileID: 576451197}
+  - component: {fileID: 576451196}
+  - component: {fileID: 576451195}
+  - component: {fileID: 576451194}
+  - component: {fileID: 576451193}
+  m_Layer: 0
+  m_Name: bare wires
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576451192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.72, y: 3.53, z: 54.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1253411349}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576451193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
+--- !u!114 &576451194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  dialogueManager: {fileID: 0}
+--- !u!65 &576451195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5516701, y: 1.1746643, z: 1.665329}
+  m_Center: {x: 0.22416496, y: 0.08733213, z: 0.3326645}
+--- !u!114 &576451196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - name: bare wires
+    sentences:
+    - "Finally this is how it should be, though it\u2019s uglier\r\n"
+--- !u!212 &576451197
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576451191}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &635922889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2208,7 @@ GameObject:
   - component: {fileID: 635922890}
   - component: {fileID: 635922892}
   - component: {fileID: 635922891}
+  - component: {fileID: 635922893}
   m_Layer: 5
   m_Name: Yellow Jacket
   m_TagString: Untagged
@@ -2164,7 +2228,7 @@ RectTransform:
   m_LocalScale: {x: 0.00991, y: 0.00991, z: 0.00991}
   m_Children: []
   m_Father: {fileID: 1271331494}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2183,7 +2247,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: Yellow Jacket
+    sentences:
+    - "This jacket saved me so many times... i wish i didn't need it anymore.\r"
 --- !u!65 &635922892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2197,6 +2264,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 184.21832, y: 399.98514, z: 1}
   m_Center: {x: 12.071703, y: 125.1801, z: 0}
+--- !u!114 &635922893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635922889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!1 &650713601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2289,7 @@ GameObject:
   - component: {fileID: 650713602}
   - component: {fileID: 650713604}
   - component: {fileID: 650713603}
+  - component: {fileID: 650713605}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -2227,7 +2309,7 @@ RectTransform:
   m_LocalScale: {x: 0.00991, y: 0.00991, z: 0.00991}
   m_Children: []
   m_Father: {fileID: 1271331494}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2246,7 +2328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: Portrait
+    sentences:
+    - 'How young... To remember where i come from.
+
+'
 --- !u!65 &650713604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2260,6 +2347,170 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 147.24605, y: 145.04544, z: 1}
   m_Center: {x: -0.23665205, y: 0.88135684, z: 0}
+--- !u!114 &650713605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650713601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
+--- !u!1 &714085281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714085282}
+  - component: {fileID: 714085284}
+  - component: {fileID: 714085283}
+  - component: {fileID: 714085285}
+  - component: {fileID: 714085286}
+  m_Layer: 0
+  m_Name: Recorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714085282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714085281}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -9.5, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1253411349}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &714085283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714085281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
+--- !u!212 &714085284
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714085281}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 29a76486d1f989c40a309fd2ff088d5e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8, y: 3.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &714085285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714085281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64000016, y: 1.36, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &714085286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714085281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - name: Recorder
+    sentences:
+    - 'My nostalgia is arguing with the unbeatable logic, why do i need this?
+
+'
+  - name: Recorder
+    sentences:
+    - "This shouldn\u2019t have happened, so much suffering and we keep falling on
+      the same shit. It\u2019s in our hands\u2026 in your hand, you are the key to
+      it\u2026 key meaningful word isn't it?\r\n"
+  - name: Recorder
+    sentences:
+    - "Robots are pretty right, i wonder how would\u2019 be the world throuhg the
+      eyes of us, i mean them"
+  - name: Recorder
+    sentences:
+    - Cut or not to cut, what kind of mercy would you give?
+  - name: Recorder
+    sentences:
+    - "Hey, nothing worked, i suppose you will have to choose again. I feel sorry
+      for us, but we ain\u2019t gods... at least we tried."
+  - name: Recorder
+    sentences:
+    - "Whats up? Sad right? At least he chose, apparently we don\u2019t have the
+      strength to decide\u2026 or the means to do so\u2026 hurry there is something
+      useful around here.\r\n"
 --- !u!1 &719800439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,8 +2557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!65 &719800442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2334,10 +2585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Mirror
+    sentences:
+    - "Sometimes I wonder how gifted I am.\r"
 --- !u!212 &719800444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2716,10 +2966,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Furniture
+    sentences:
+    - "Mmm It\u2019s locked, can\u2019t remember what\u2019s inside. Where is the
+      key?\r\n"
+  - name: Furniture unlocked
+    sentences:
+    - Really... it's fucking empty, is this a joke?
 --- !u!65 &826403111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2745,8 +2998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acbd0cfa25e8e54a8d928c8f0cfb87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!212 &826403113
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2797,109 +3050,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &831971337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 831971338}
-  - component: {fileID: 831971342}
-  - component: {fileID: 831971341}
-  - component: {fileID: 831971340}
-  - component: {fileID: 831971339}
-  m_Layer: 5
-  m_Name: Table
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &831971338
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831971337}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.579259}
-  m_LocalScale: {x: 0.04358, y: 0.04358, z: 0.04358}
-  m_Children: []
-  m_Father: {fileID: 1271331494}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.447778, y: -3.3189816}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!65 &831971339
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831971337}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 85.95966, y: 19.467224, z: 1}
-  m_Center: {x: -3.0680125, y: 6.886986, z: 0}
---- !u!114 &831971340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831971337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: []
---- !u!114 &831971341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831971337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 65ea75e737436904fbee8d14cc81054b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &831971342
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831971337}
-  m_CullTransparentMesh: 0
 --- !u!1 &833741210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,10 +3336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Furniture
+    sentences:
+    - "Mmm It\u2019s locked, can\u2019t remember what\u2019s inside. Where is the
+      key?\r\n"
 --- !u!65 &942011459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3752,7 +3902,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a73783fdd47b454683008cffcbfb59e, type: 2}
+  - {fileID: 2100000, guid: 5e70a930a3423734ca01e93d67d29d7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4001,7 +4151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectable_color: {r: 0.9920671, g: 1, b: 0, a: 1}
-  animator: {fileID: 0}
+  animator: {fileID: 2016660234}
 --- !u!4 &1088463046
 Transform:
   m_ObjectHideFlags: 0
@@ -4264,9 +4414,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 576451192}
   - {fileID: 1314049607}
-  - {fileID: 332863729}
   - {fileID: 826403109}
+  - {fileID: 714085282}
   m_Father: {fileID: 1788755806}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4393,7 +4544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: 1
+    sentences:
+    - My old and reliable desk
 --- !u!1 &1271331493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,7 +4575,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 831971338}
   - {fileID: 650713602}
   - {fileID: 635922890}
   - {fileID: 1917507935}
@@ -4461,7 +4614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1253411349}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1314049608
 MonoBehaviour:
@@ -4475,8 +4628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!65 &1314049609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4503,10 +4656,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Calendar
+    sentences:
+    - Are we on holidays already?
 --- !u!212 &1314049611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4664,7 +4816,7 @@ GameObject:
   - component: {fileID: 1359608473}
   - component: {fileID: 1359608472}
   - component: {fileID: 1359608475}
-  - component: {fileID: 1359608471}
+  - component: {fileID: 1359608476}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Untagged
@@ -4686,23 +4838,6 @@ Transform:
   m_Father: {fileID: 302894838}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1359608471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359608469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8446d7cc49d3a54c87738f0dad29009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 1915264357}
-  dialogueManager: {fileID: 1363949242}
-  bottons: []
-  correctNumber: 
-  correct_pasword: 0
 --- !u!65 &1359608472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4874,7 +5009,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: Phone
+    sentences:
+    - 'This phone is older than me, wonder how still works
+
+'
+  - name: Phone
+    sentences:
+    - "-Call him back, he\u2019s waiting for you, if I remember you left a note around
+      here"
+  - name: Phone
+    sentences:
+    - At least, for god sake hurry up and come here, we depend on it.
+  - name: Phone
+    sentences:
+    - "Hey, i have an existential question, if you would like to be something else
+      but this world couldn\u2019t provide it what would you do?\r"
+  - name: Phone
+    sentences:
+    - "Hey, i have an existential question, if you would like to be something else
+      but this world couldn\u2019t provide it what would you do?\r\n"
+  - name: node1
+    sentences:
+    - 'Was it the right choice? How will his pain evolve?
+
+'
+  - name: node2
+    sentences:
+    - 'What a mess... will you do the same?
+
+
+
+'
+  - name: node2
+    sentences:
+    - "Do you think we are fucked up here? Try to be anything else that is commanded.
+      Maybe you don\u2019t have to choose the lesser evil, you may have one shot
+      to do things right. "
+  - name: phone
+    sentences:
+    - There are no pigs left, are you a pig?
+--- !u!114 &1359608476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359608469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!1 &1363949242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,10 +5256,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Portrait
+    sentences:
+    - Jesus, I'm gorgeous.
 --- !u!212 &1409529941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5565,10 +5753,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Library
+    sentences:
+    - This library contains some of the most precious belongings.
+    - "A book called: Transhumanisme. Free yourself to data. It\u2019s not so hard
+      to understand. They just need time.\r"
+    - "A book called: Machine Feelings.  I just keep this book as a reminder, feelings
+      doesn\u2019t belong to a race.\r\n"
 --- !u!1 &1441346284
 GameObject:
   m_ObjectHideFlags: 0
@@ -5664,6 +5855,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441346284}
   m_CullTransparentMesh: 0
+--- !u!1 &1451493493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451493494}
+  - component: {fileID: 1451493497}
+  - component: {fileID: 1451493496}
+  - component: {fileID: 1451493495}
+  m_Layer: 0
+  m_Name: poster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451493494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451493493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2120159753}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451493495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451493493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - name: poster
+    sentences:
+    - "They are just the same\u2026 i wonder if it\u2019s an opression symptom.\r\n"
+--- !u!65 &1451493496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451493493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!212 &1451493497
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451493493}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1451972414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,10 +6125,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Window
+    sentences:
+    - 'If only i had the value... this is my window to the world, this is my world.
+
+'
 --- !u!114 &1468429254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5949,8 +6253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!114 &1480327266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5964,10 +6268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Aloe Vera
+    sentences:
+    - 'Aloe Vera my dear plant, are you the only living being around here?
+
+'
 --- !u!212 &1480327267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6048,6 +6353,7 @@ Transform:
   - {fileID: 486269215}
   - {fileID: 1255505021}
   - {fileID: 1436903029}
+  - {fileID: 27157849}
   m_Father: {fileID: 1840736912}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6196,8 +6502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!114 &1633543396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6278,225 +6584,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1639334198
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1639334204}
-  - component: {fileID: 1639334203}
-  - component: {fileID: 1639334202}
-  - component: {fileID: 1639334201}
-  - component: {fileID: 1639334200}
-  - component: {fileID: 1639334199}
-  m_Layer: 0
-  m_Name: PhoneProv
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1639334199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f790589bce896ed41995541c9e42c475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1639334200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: []
---- !u!65 &1639334201
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7986436, y: 0.97188497, z: 0.1224888}
-  m_Center: {x: -1.0666167e-16, y: -0.020576358, z: 0.03875564}
---- !u!82 &1639334202
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e40d030ab0db63b4ca410d73d2332bf6, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!212 &1639334203
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 70c5294423dae4741862e40c358819dc, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 330d69314f51967428f0853e1feb9a79, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.96, y: 1.19}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1639334204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639334198}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.55, y: -0.33, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 302894838}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1676590795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,7 +6738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9aae054cab5794994747a9effce8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneManager: {fileID: 0}
+  sceneManager: {fileID: 1775394457}
   changesScene: 0
 --- !u!212 &1715692720
 SpriteRenderer:
@@ -6843,7 +6930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1271331494}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1780989272
 SpriteRenderer:
@@ -7062,7 +7149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: Calendar
+    sentences:
+    - "I need some vacation...\r"
 --- !u!212 &1832810064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7555,6 +7645,7 @@ GameObject:
   - component: {fileID: 1917507935}
   - component: {fileID: 1917507937}
   - component: {fileID: 1917507936}
+  - component: {fileID: 1917507938}
   m_Layer: 5
   m_Name: Aloe Vera
   m_TagString: Untagged
@@ -7574,7 +7665,7 @@ RectTransform:
   m_LocalScale: {x: 0.00991, y: 0.00991, z: 0.00991}
   m_Children: []
   m_Father: {fileID: 1271331494}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7606,7 +7697,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76daae210fc88274695f4e48c25782b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - name: Aloe Vera
+    sentences:
+    - "Aloe Vera my dear plant, if only i had hair nowadays...\r"
+--- !u!114 &1917507938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917507934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!1 &1928732004
 GameObject:
   m_ObjectHideFlags: 0
@@ -7666,8 +7774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!114 &1928732008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7681,10 +7789,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Yellow Jacket
+    sentences:
+    - "This jacket saved me so many times... it\u2019s nice to be surrounded with
+      precious things\r\n"
 --- !u!212 &1928732009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7881,7 +7989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a73783fdd47b454683008cffcbfb59e, type: 2}
+  - {fileID: 2100000, guid: 80e54242a56152b479ee4b3de5af111b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8133,6 +8241,7 @@ Transform:
   - {fileID: 1633543394}
   - {fileID: 384263211}
   - {fileID: 505864204}
+  - {fileID: 1451493494}
   m_Father: {fileID: 1788755806}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8196,10 +8305,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
-    sentences: []
-  - name: 
-    sentences: []
+  - name: Window
+    sentences:
+    - 'Sometimes i think transhumans only care for themselves, everything is a complete
+      mess.
+
+'
 --- !u!114 &2130755319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8212,8 +8323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f93e439ce75e479dd60ad36d4ebbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  camera: {fileID: 1915264357}
+  dialogueManager: {fileID: 1363949242}
 --- !u!212 &2130755320
 SpriteRenderer:
   m_ObjectHideFlags: 0
